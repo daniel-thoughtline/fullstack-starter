@@ -45,9 +45,9 @@ pipeline {
                 sh '''
                     docker compose down --remove-orphans || true
  
-                    docker rm -f react-frontend || true
-                    docker rm -f node-backend || true
-                    docker rm -f postgres-db || true
+                    docker rm -f react_frontend || true
+                    docker rm -f node_backend || true
+                    docker rm -f postgres_db || true
  
                     docker compose up -d
                 '''
