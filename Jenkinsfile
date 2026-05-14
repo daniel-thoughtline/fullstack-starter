@@ -1,13 +1,13 @@
 pipeline {
  
     agent any
- 
-    stages {
 
         tools {
             nodejs('26.1.0')
         }
  
+    stages {
+
         stage('Clone Repository') {
             steps {
                 git branch: 'main',
