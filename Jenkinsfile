@@ -3,6 +3,10 @@ pipeline {
     agent any
  
     stages {
+
+        tools {
+            nodejs('26.1.0')
+        }
  
         stage('Clone Repository') {
             steps {
